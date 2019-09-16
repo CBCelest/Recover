@@ -1,12 +1,11 @@
 
+
 #topheader {
     grid-area: top_track;
     background-color: slategrey;
-
 }
 
 #logo {
-
     display: block;
     position: relative;
     margin-left: auto;
@@ -15,38 +14,43 @@
 }
 
 #teamname {
-
     text-align: center;
     font-size: x-large;
     font-family: Jazz LET, URW Chancery L, cursive, fantasy;
-
 }
 
 .sidenavbar {
     grid-area: track_1;
     background-color: darkgrey;
-    height: 500px;
-
+    height: 100%;
 }
 
-.mainarea {
+.mainareatop {
     grid-area: area_1;
     background-color: azure;
-    height: 500px;
+    height: 100%;
 }
-.gridlayout {
 
+.mainareabottom {
+    grid-area: area_2;
+    background-color: azure;
+    height: 100%;
+}
+
+.teamlinks {
+    display: flex;
+}
+
+.gridlayout {
     display: grid;
     grid-template-areas: 'top_track top_track top_track'
     'track_1 area_1 area_1'
-    'track_1 area_1 area_1'
-    'track_1 area_1 area_1'
-    'track_1 area_1 area_1';
-
+    'track_1 area_2 area_2'
+    'track_1 area_2 area_2'
+    'track_1 area_2 area_2';
 }
 
 .milestoneblock {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -55,35 +59,102 @@
 }
 
 #milestone1 {
-
     font-size: larger;
     font-weight: bold;
-
 }
 
 #milestone2 {
-
     font-size: larger;
     font-weight: bold;
-
 }
 
 #milestone3 {
-
     font-size: larger;
     font-weight: bold;
-
 }
 
 #milestone4 {
-
     font-size: larger;
     font-weight: bold;
-
 }
 
 #welcome {
     font-size: x-large;
     font-weight: bold;
     padding-left: 15%;
+}
+
+#team {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#teammembers {
+    text-align: center;
+}
+
+#natalie {
+    font-size: x-large;
+}
+
+#nataliebox {
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+#allison {
+    font-size: x-large;
+}
+
+#allisonbox {
+    display: inline-block;
+    padding-bottom: 2%;
+}
+
+#christine {
+    font-size: x-large;
+}
+
+#christinebox {
+    display: block;
+    float: right;
+    width: 33.33%;
+    padding-bottom: 2%;
+}
+
+#reagan {
+    font-size: x-large;
+}
+
+#reaganbox {
+    float: left;
+    width: 33.33%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+#divya {
+    font-size: x-large;
+}
+
+#divyabox {
+    display: block;
+    padding-bottom: 2%;
+}
+
+#footer {
+    background-color: slategrey;
+}
+
+#footerinfo {
+    font-size: large;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
 }
